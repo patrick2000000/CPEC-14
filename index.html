@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CPEC Saint Babeth</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+  <div class="logo-box">
+    <img class="logp" src="cpec logo.png" alt="School Logo">
+    <h2>CPEC Saint Babeth</h2>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="departments.html">Departments</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="staff.html">Staff</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+</header>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">z
+
+  <div class="hero-text">
+    <!-- SLIDING TEXT SECTION -->
+
+<section class="slide-section">
+
+  <div class="slide-track">
+
+    <div class="slide-text">
+      Excellence In Education
+    </div>
+
+    <div class="slide-text">
+      Practical Skills For The Future
+    </div>
+
+    <div class="slide-text">
+      Innovation • Technology • Creativity
+    </div>
+
+    <div class="slide-text">
+      Welcome To CPEC Saint Babeth
+    </div>
+
+    <div class="slide-text">
+      Building Future Leaders
+    </div>
+
+  </div>
+
+</section>
+
+    <marquee>
+      <h1>
+        WELCOME TO CPEC SAINT BABETH
+        (Ordinary Level & Technical Secondary School)
+      </h1>
+    </marquee>
+
+    <p>
+      Quality Education & Practical Skills for a Better Future
+    </p>
+
+    <button>Apply Now</button>
+
+  </div>
+
+  <div class="hero-img">
+    <img src="images/school1.jpg" id="school" alt="School">
+  </div>
+
+</section>      
+
+
+<!-- STATS -->
+
+<section class="stats">
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="5000">0</h2>
+    <p>Active Students</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="400">0</h2>
+    <p>Expert Staff</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="1500">0</h2>
+    <p>Industry Partners</p>
+  </div>
+
+</section>
+
+
+
+    
+
+    <button>Read More</button>
+
+  </div>
+
+</section>
+
+<!-- LEVELS -->
+
+<section class="section">
+
+  <h2>Ordinary Level Classes</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="S1.jpg" alt="S1">
+      <h3>S1</h3>
+    </div>
+
+    <div class="card">
+      <img src="S2.jpg" alt="S2">
+      <h3>S2</h3>
+    </div>
+
+    <div class="card">
+      <img src="S3.jpg" alt="S3">
+      <h3>S3</h3>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DEPARTMENTS -->
+
+<section class="section">
+
+  <h2>Departments</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="mu.JPG" alt="Software Development">
+      <h3>Software Development</h3>
+      <p>Programming, Web & App Development</p>
+    </div>
+
+    <div class="card">
+      <img src="p.JPG" alt="Multimedia">
+      <h3>Multimedia</h3>
+      <p>Design, Video Editing & Creativity</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WORKSHOPS -->
+
+<section class="section dark">
+
+  <h2>Practical Skill Workshops</h2>
+
+  <div class="grid">
+
+    <div class="card dark-card">
+      <img src="sodlaborator.JPG" alt="Software Workshop">
+      <h3>Software Development Workshop</h3>
+      <p>Hands-on coding & real projects</p>
+    </div>
+
+    <div class="card dark-card">
+      <img src="mmpworkshop1.JPG" alt="Multimedia Workshop">
+      <h3>Multimedia Workshop</h3>
+      <p>Design, Video Production & Creativity</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+  counter.innerText = '0';
+
+  const updateCounter = () => {
+
+    const target = +counter.getAttribute('data-target');
+    const current = +counter.innerText;
+
+    const increment = target / 100;
+
+    if(current < target){
+
+      counter.innerText = Math.ceil(current + increment);
+
+      setTimeout(updateCounter, 30);
+
+    } else {
+
+      counter.innerText = target + "+";
+
+    }
+
+  };
+
+  updateCounter();
+
+});
+
+</script>
+
+</body>
+</html>

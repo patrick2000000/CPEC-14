@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | CPEC Saint Babeth</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+  <div class="logo-box">
+    <img class="logp" src="cpec logo.png" alt="School Logo">
+    <h2>CPEC Saint Babeth</h2>
+  </div>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="departments.html">Departments</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="staff.html">Staff</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+</header>
+
+<!-- CONTACT HERO -->
+
+<section class="contact-hero">
+
+  <div class="overlay">
+
+    <h1>Contact Us</h1>
+
+    <p>
+      We are here to help you and answer your questions anytime.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-section">
+
+  <!-- CONTACT FORM -->
+
+  <div class="contact-box">
+
+    <h2>Send Us A Message</h2>
+
+    <form id="contactForm">
+
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <textarea id="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+      <p id="msg"></p>
+
+    </form>
+
+  </div>
+
+  <!-- CONTACT INFO -->
+
+  <div class="contact-info">
+
+    <h2>Get In Touch</h2>
+
+    <p>📍 Kigali, Rwanda</p>
+
+    <p>📞 +250 7XX XXX XXX</p>
+
+    <p>✉️ cpecsaintbabeth@gmail.com</p>
+
+    <h3>Follow Us</h3>
+
+    <div class="social-links">
+
+      <a href="https://facebook.com" target="_blank">
+        📘 Facebook
+      </a>
+
+      <a href="https://instagram.com" target="_blank">
+        📸 Instagram
+      </a>
+
+      <a href="https://x.com" target="_blank">
+        🐦 X (Twitter)
+      </a>
+
+      <a href="https://wa.me/250000000000" target="_blank">
+        💬 WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- MAP SECTION -->
+
+<section class="map-section">
+
+  <h2>Our Location & Nearby Places</h2>
+
+  <p>Find us easily on the map and explore nearby places like Gicumbi Bus Station and Dove Luxury Hotel.</p>
+
+  <div class="map-container">
+
+    <!-- CPEC SAINT BABETH -->
+    <iframe
+      src="https://www.google.com/maps?q=CPEC%20Saint%20Babeth%20Rwanda&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <!-- GARE YA GICUMBI -->
+    <iframe
+      src="https://www.google.com/maps?q=Gicumbi%20Bus%20Station%20Rwanda&output=embed"
+      width="100%"
+      height="300"
+      style="border:0; margin-top:10px;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <!-- DOVE LUXURY -->
+    <iframe
+      src="https://www.google.com/maps?q=Dove%20Luxury%20Hotel%20Rwanda&output=embed"
+      width="100%"
+      height="300"
+      style="border:0; margin-top:10px;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    © 2026 CPEC Saint Babeth | All Rights Reserved
+  </p>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const form = document.getElementById("contactForm");
+
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    msg.innerHTML = "✅ Message Sent Successfully!";
+
+    msg.style.color = "lime";
+
+    form.reset();
+
+});
+
+</script>
+
+</body>
+
+</html>
